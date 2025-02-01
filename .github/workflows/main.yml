@@ -1,17 +1,16 @@
-name: Test Action
+name: Custom Action Example
 
 on:
   push:
     branches:
-      - main  # This can be any branch you want to trigger the action
+      - main  # Trigger this action when pushing to the main branch
+  workflow_dispatch:  # Allows manual triggering of the action
 
 jobs:
   test:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
 
-      - name: Print Hello, world!
+      - name: 23f3004246@ds.study.iitm.ac.in
         run: echo "Hello, world!"
